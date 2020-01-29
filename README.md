@@ -1,2 +1,0 @@
-# everydaybible
-Bible for everyday
