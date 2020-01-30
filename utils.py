@@ -6,3 +6,13 @@ def supress_errors(func):
         except Exception as err:
             print(err)
     return wrapper
+
+
+def full_name_getter(message):
+    name = message.from_user.first_name
+    surname = message.from_user.last_name
+    if not name:
+        name = ''
+    if not surname:
+        surname = ''
+    return f"{name} {surname}"

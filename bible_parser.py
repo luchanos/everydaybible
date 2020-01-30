@@ -4,7 +4,7 @@ from utils import supress_errors
 
 
 @supress_errors
-def bible_parser(start, end):
+def bible_parser(start=0, end=100):
     if end < start:
         raise WrongBorders("конечная строка не может быть меньше начальной!")
     if end - start > STRING_LIMIT:
