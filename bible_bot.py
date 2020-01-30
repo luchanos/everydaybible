@@ -1,6 +1,8 @@
 import telebot
 import time
 import os
+
+from bible_parser import bible_parser
 from settings import TOKEN, PATH_TO_ICONS
 bot = telebot.TeleBot(TOKEN)
 
@@ -33,6 +35,12 @@ def find_file_ids(message):
 @bot.message_handler(commands=['give_indulgence'])
 def find_file_ids(message):
     answer = f"Твои грехи отпущены, {full_name_getter(message=message)}"
+    bot.send_message(chat_id=message.chat.id, text=answer)
+
+
+@bot.message_handler(commands=['give_start_of_bible'])
+def find_file_ids(message):
+    answer = bible_parser()
     bot.send_message(chat_id=message.chat.id, text=answer)
 
 
