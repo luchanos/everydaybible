@@ -1,7 +1,6 @@
 import telebot
 import time
 import os
-
 from bible_parser import bible_parser
 from settings import TOKEN, PATH_TO_ICONS
 bot = telebot.TeleBot(TOKEN)
