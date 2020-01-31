@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "luchanos/everydaybible:1.0.4",
+    "Name": "luchanos/everydaybible:1.0.5",
     "Update": "true"
   },
   "Ports": [
