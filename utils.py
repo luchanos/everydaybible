@@ -5,7 +5,7 @@ def supress_errors(func):
             func(*args, **kwargs)
         except Exception as err:
             print(err)
-    return func
+    return wrapper
 
 
 def full_name_getter(message):
