@@ -1,10 +1,10 @@
 import telebot
-from settings import TOKEN
-from utils import full_name_getter
-from bible_parser import bible_parser
+from bible_bot_app.settings import TOKEN
+from bible_bot_app.utils import full_name_getter
+from bible_bot_app.bible_parser import bible_parser
 import time
 import os
-from settings import PATH_TO_ICONS
+from bible_bot_app.settings import PATH_TO_ICONS
 
 bot = telebot.TeleBot(TOKEN)
 

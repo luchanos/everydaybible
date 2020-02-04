@@ -11,3 +11,4 @@ six==1.14.0
 sqlparse==0.3.0
 urllib3==1.25.8
 pytest==5.3.5
+pytest-cov==2.8.1
