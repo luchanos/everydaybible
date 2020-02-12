@@ -12,9 +12,14 @@ loaded_bible = load_bible()
 
 
 @supress_errors
-def bible_parser(start=0, end=20):
+def bible_parser(start, end):
     if end < start:
         raise WrongBorders("конечная строка не может быть меньше начальной!")
     if end - start > STRING_LIMIT:
         raise TooMuchLines("запрошен слишком большой промежуток строк! Лимит - {}!".format(STRING_LIMIT))
     return ''.join(load_bible()[start:end])
+
+
+@supress_errors
+def parse_args(s: str):
+    return s.split(' ')[1:]
