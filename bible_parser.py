@@ -1,6 +1,6 @@
-from bible_bot_app.exceptions import WrongBorders, TooMuchLines
-from bible_bot_app.settings import STRING_LIMIT
-from bible_bot_app.utils import supress_errors
+from exceptions import WrongBorders, TooMuchLines
+from settings import STRING_LIMIT
+from utils import supress_errors
 
 
 def load_bible():

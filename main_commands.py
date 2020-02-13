@@ -1,7 +1,7 @@
 import os
-from bible_bot_app.bible_parser import bible_parser
-from bible_bot_app.settings import PATH_TO_ICONS
-from bible_bot_app.utils import full_name_getter
+from bible_parser import bible_parser
+from settings import PATH_TO_ICONS
+from utils import full_name_getter
 
 
 def image_answer_sender(answer, img_name, bot, message):

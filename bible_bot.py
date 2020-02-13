@@ -1,8 +1,8 @@
 import telebot
 
-from bible_bot_app.main_commands import give_jesus, give_indulgence, bless_me, give_bible_range
-from bible_bot_app.settings import TOKEN
-from bible_bot_app.utils import supress_errors
+from main_commands import give_jesus, give_indulgence, bless_me, give_bible_range
+from settings import TOKEN
+from utils import supress_errors
 
 bot = telebot.TeleBot(TOKEN)
 
