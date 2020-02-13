@@ -33,6 +33,7 @@ def parse_args(s: str):
 
 
 def give_bible_range(message, bot):
+    pic_url = 'https://www.pravmir.ru/wp-content/uploads/2017/08/bibliya-2.jpg'
     args = list(map(int, parse_args(message.text)))
     answer = bible_parser(start=args[0], end=args[1])
-    image_answer_sender(answer=answer, img_name='bible', bot=bot, message=message)
+    bot.send_message(text=pic_url + ' ' + answer, chat_id=message.chat.id)
