@@ -4,7 +4,7 @@ from main_commands import give_jesus, give_indulgence, bless_me, give_bible_rang
 from settings import TOKEN
 from utils import supress_errors
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot('')
 
 
 commands = {'give_jesus': give_jesus,

@@ -1,4 +1,4 @@
-from bible_bot_app.utils import supress_errors
+from utils import supress_errors
 
 
 @supress_errors

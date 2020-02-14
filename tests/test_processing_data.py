@@ -1,6 +1,6 @@
 from tests.conftest import test_msg
-from bible_bot_app.utils import full_name_getter
-from bible_bot_app.bible_parser import load_bible
+from utils import full_name_getter
+from bible_parser import load_bible
 
 
 def test_load_bible():
