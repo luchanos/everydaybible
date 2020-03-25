@@ -32,6 +32,18 @@ def give_jesus(message, bot):
     image_answer_sender(answer=answer, img_name='есус', bot=bot, message=message)
 
 
+def pray_coronavirus(message, bot):
+    answer = "Господи Боже наш, не вниди в суд с рабы Твоими, " \
+             "и огради нас от губительнаго поветрия на ны движимаго." \
+             " Пощади нас смиренных и недостойных рабов Твоих в покаянии" \
+             " с теплою верою и сокрушением сердечным к Тебе милосердному" \
+             " и благопременительному Богу нашему припадающих и на милость" \
+             " Твою уповающих. Твое бо есть, еже миловати и спасати ны, " \
+             "Боже наш, и Тебе славу возсылаем, Отцу и Сыну и Святому Духу," \
+             " ныне и присно и во веки веков. Аминь."
+    image_answer_sender(answer=answer, img_name='coronavirus', bot=bot, message=message)
+
+
 def parse_args(s: str):
     return s.split(' ')[1:]
 

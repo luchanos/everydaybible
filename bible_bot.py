@@ -1,16 +1,19 @@
 import telebot
-
-from main_commands import give_jesus, give_indulgence, bless_me, give_bible_range
-from settings import TOKEN
+from telebot import apihelper
+from main_commands import give_jesus, give_indulgence, bless_me, pray_coronavirus
+from settings import TOKEN, USE_PROXY, PROXY
 from utils import supress_errors
 
-bot = telebot.TeleBot('')
+if USE_PROXY:
+    apihelper.proxy = {'https': f'socks5://{PROXY}'}
 
+bot = telebot.TeleBot(TOKEN)
 
 commands = {'give_jesus': give_jesus,
             'give_indulgence': give_indulgence,
             'bless_me': bless_me,
-            'give_bible_range': give_bible_range}
+            # 'give_bible_range': give_bible_range}
+            'pray_coronavirus': pray_coronavirus}
 
 
 @bot.message_handler(commands=['bless_user'])

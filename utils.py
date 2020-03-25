@@ -1,10 +1,16 @@
+from logging import getLogger
+
+
+logger = getLogger(__name__)
+
+
 def supress_errors(func):
     """Декоратор для подавления ошибок"""
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
         except Exception as err:
-            print(err)
+            logger.error(err)
     return wrapper
 
 
