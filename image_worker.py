@@ -24,4 +24,4 @@ def jesus_quote_image(top, bottom='Иисус Христос'):
     draw.text((band_x, band_y), top, (255, 255, 255), font=band_name_font)
     draw.text((album_x, album_y), bottom, (255, 255, 255), font=album_name_font)
 
-    return image
+    image.save('temporary.png')

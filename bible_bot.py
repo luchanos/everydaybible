@@ -51,13 +51,15 @@ def jesus_quote(message):
 @bot.message_handler(content_types=['text'])
 def quote_message_handler(message):
     if message.from_user.id in user_ids_for_quoting:
-        # image = jesus_quote_image(top=message.text)
-        bot.send_message(message.chat.id, text='TEST')
+        jesus_quote_image(top=message.text)
+        f = open('temporary.png', 'rb')
+        bot.send_photo(message.chat.id, f, reply_to_message_id=f"\"{message.message_id}\"", caption='Держи')
+        user_ids_for_quoting.remove(message.from_user.id)
 
 
 def telegram_polling():
     try:
-        bot.polling(none_stop=True, timeout=60) #constantly get messages from Telegram
+        bot.polling(none_stop=True, timeout=60)
     except Exception as err:
         bot.stop_polling()
         time.sleep(3)
@@ -66,4 +68,3 @@ def telegram_polling():
 
 if __name__ == '__main__':
     telegram_polling()
-
