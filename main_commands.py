@@ -1,5 +1,6 @@
 import os
 from bible_parser import bible_parser
+from image_worker import jesus_quote_image
 from settings import PATH_TO_ICONS
 from utils import full_name_getter
 
