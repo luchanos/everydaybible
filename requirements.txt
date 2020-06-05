@@ -3,7 +3,7 @@ PySocks
 asgiref==3.2.3
 certifi==2019.11.28
 chardet==3.0.4
-Django==3.0.2
+Django==3.0.7
 envparse==0.2.0
 idna==2.8
 pyTelegramBotAPI
