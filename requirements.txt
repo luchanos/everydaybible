@@ -8,7 +8,7 @@ envparse==0.2.0
 idna==2.8
 pyTelegramBotAPI
 pytz==2019.3
-requests==2.10.0
+requests==2.20.0
 six==1.14.0
 sqlparse==0.3.0
 urllib3
