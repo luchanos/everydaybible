@@ -1,7 +1,7 @@
 gunicorn
 PySocks
 asgiref==3.2.3
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 Django==3.0.2
 envparse==0.2.0
